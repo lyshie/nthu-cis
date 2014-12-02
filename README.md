@@ -10,7 +10,7 @@ Dependencies
 
 Screenshot
 ----------
-    ![Icon](screenshot.png)
+![Screenshot](screenshot.png)
 
 Author & Maintainer
 -------------------
