@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">校園資訊系統</string>
+    <string name="label_captcha">驗證碼</string>
+    <string name="label_session">會議</string>
+    <string name="label_status">狀態</string>
+    <string name="label_keyword">關鍵字</string>
+    <string name="label_result">結果</string>
+    <string name="label_author_info">謝立益 (lyshie) &lt;lyshie@mx.nthu.edu.tw&gt;</string>
+    <string name="action_fetch">擷取</string>
+    <string name="action_login">登入</string>
+    <string name="action_query">查詢</string>
+    <string name="msg_loading">載入中&#8230;</string>
+    <string name="msg_failed">失敗！</string>
+    <string name="msg_logged_in">已登入！</string>
+    <string name="msg_no_data">沒有資料</string>
+    <string name="msg_wifi_connected">無線網路 "%s" 已連接！</string>
+    <string name="msg_wifi_enabled">無線網路已啟用！</string>
+    <string name="title_activity_eip">差勤系統</string>
+    <string name="title_activity_edoc">電子公文系統</string>
+    <string name="title_activity_find_nthu">找 NTHU</string>
+    <string name="title_activity_about">關於</string>
+    <string name="title_activity_update">更新</string>
+    <string name="title_activity_cleanup">清除</string>
+    <string name="title_activity_mailing_list">電子報</string>
+    <string name="title_activity_wifi">WiFi 自動登入</string>
+    <string name="pref_title_wifi_password">WiFi 密碼</string>
+    <string name="click_to_open_edoc">點一下開啟電子公文系統</string>
+    <string name="msg_yes">是</string>
+    <string name="msg_no">否</string>
+    <string name="msg_open_external_browser">開啟外部瀏覽器？</string>
+
+</resources>

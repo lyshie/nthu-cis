@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabIPQuery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:inputType="text|number"
+        android:tag="ip" />
+
+    <Button
+        android:id="@+id/buttonIPQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextIP"
+        android:layout_toRightOf="@+id/editTextIP"
+        android:onClick="onButtonClick"
+        android:text="@string/action_query" />
+
+    <WebView
+        android:id="@+id/webViewIP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextIP" />
+
+</RelativeLayout>

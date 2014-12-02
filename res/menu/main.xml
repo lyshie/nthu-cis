@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tw.edu.nthu.cc.cis.MainActivity" >
+
+    <item
+        android:id="@+id/action_mailing_list"
+        android:title="@string/title_activity_mailing_list">
+    </item>
+    <item
+        android:id="@+id/action_find_nthu"
+        android:title="@string/title_activity_find_nthu">
+    </item>
+    <item
+        android:id="@+id/action_eip"
+        android:title="@string/title_activity_eip">
+    </item>
+    <item
+        android:id="@+id/action_edoc"
+        android:title="@string/title_activity_edoc">
+    </item>
+    <item
+        android:id="@+id/action_wifi"
+        android:title="@string/title_activity_wifi">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/title_activity_settings">
+    </item>
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/title_activity_about">
+    </item>
+    <item
+        android:id="@+id/action_update"
+        android:title="@string/title_activity_update">
+    </item>
+    <item
+        android:id="@+id/action_cleanup"
+        android:title="@string/title_activity_cleanup">
+    </item>
+
+</menu>
