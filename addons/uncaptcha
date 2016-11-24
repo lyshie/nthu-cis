@@ -1,0 +1,30 @@
+#!/bin/sh
+
+REGEX="^[[:digit:]]{6,6}$"
+
+TMP=$(wget --quiet -A '*auth_img*' -r --level=1 -P /tmp/auth_img/ "https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/index.php?lang=chinese" -e robots=off)
+
+AUTH_IMG=$(ls -t -r /tmp/auth_img/www.ccxp.nthu.edu.tw/ccxp/INQUIRE/*auth_img* | tail -n 1)
+
+URL=$(basename "$AUTH_IMG")
+
+RESULT=""
+
+for I in 1 2 3 4 5 6
+do
+	for J in 1 2 3
+	do
+        TMP=$(wget --quiet -A '*auth_img*' -r --level=1 -P /tmp/auth_img/ "https://www.ccxp.nthu.edu.tw/ccxp/INQUIRE/$URL" -e robots=off)
+        PLAIN_TEXT=$(captcha_decoder.pl "$AUTH_IMG" | tail -n 1)
+        if [[ $PLAIN_TEXT =~ $REGEX ]]; then
+	        RESULT=$(echo "${RESULT}${PLAIN_TEXT}\n")
+			break
+        fi
+    done
+done
+
+PLAIN_TEXT=$(echo -e -n $RESULT | sort | uniq -c | sort -n -r | head -n 1 | awk -F' ' '{print $2}')
+
+yad --image="$AUTH_IMG" --entry --entry-label="我猜應該是" --entry-text="$PLAIN_TEXT"
+
+basename "$AUTH_IMG"
